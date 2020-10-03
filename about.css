@@ -1,0 +1,234 @@
+
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	background-position: center;
+	box-sizing: border-box;
+	font-family: 'Kufam' , cursive;
+	background-color: #32527b;
+	/* background-color: white; */
+	/* color: #32527B; */
+    font-size: 150%;
+
+}
+/* .logo{
+    position: absolute;
+    top: -4.5px;
+    bottom: 0;
+    left: -850px;
+    right: 0px;
+                    
+
+} */
+
+.header
+{
+	background-color: #c67b5c;
+	box-shadow: 6px 6px 9px 0 rgba(50,80,123,0.9);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	display: block;
+}
+
+.header a
+{
+	text-decoration: none;
+}
+
+.cursivehanxu
+{
+	font-family: 'Spectral', serif;
+
+/*'Cedarville Cursive', cursive;
+*/	color: #32527b;
+}	
+
+/* .menu li a{ */
+	/* background-color: #32527B; */
+/* } */
+
+.menu ul
+{
+	overflow: hidden;
+}
+
+.header ul a
+{
+	display: block;
+	padding: 20px;
+	border-right: 4px solid #893cfc;
+	border-left: 4px solid #893cfc;
+}
+
+
+
+.header ul a:hover
+{
+	color: rgba(0,0,0.7);
+	background-color: #32527b;
+}
+
+.header .menu{
+	clear: both;
+	max-height: 0;
+	transition: max-height .4s ease-out;
+}
+
+.header .menu-icon{
+	/*outline: 1px solid red;*/
+	padding: 20px 20px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+	color: #32527b;
+}
+
+.header .menu-icon .nav-icon{
+	background: #32527b;
+	display: block;
+	color: #32527b;
+	height: 2px;
+	width: 18px;
+	position: relative;
+	transition: background  .4s ease-out;
+}
+
+.header .menu-icon .nav-icon:before
+{
+	background: #32527b;
+	content: "";
+	display: block;
+	color: #32527b;
+
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all .4s ease-out;
+	top: 5px;
+}
+
+.header .menu-icon .nav-icon:after
+{
+	background: #32527b;
+
+	content: "";
+	display: block;
+	color: #32527b;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all .4s ease-out;
+	top: -5px;
+}
+
+.menu-btn
+{
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+	max-height: 290px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+	background:#32527B;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before
+{
+	transform: rotate(-45deg);
+	top: 0;
+
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after
+{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+
+
+@media (min-width:48em){
+	.header{
+		height: 138px;
+	}
+	.header li{
+		float: left;
+
+	}
+	.header .menu
+	{
+		display: inline-flex;
+		justify-content: space-between;
+		list-style: none;
+	}
+	.header .menu-icon
+	{
+		display: none;
+	}
+	.header ul a
+	{
+		border-right: 0px solid #c67b5c;
+	    border-left: 0px solid #c67b5c;
+	}
+
+	
+
+}
+
+
+.menu li a
+{
+	text-decoration: none;
+	list-style: none;
+	color: #32527b;
+	font-weight: 1000;
+	text-align: center;
+}
+
+.list ul{
+    text-align: center;
+    
+    font-size: xx-large;
+}
+
+.redi{
+    display: inline-block;
+    	top:50pc;
+	left: 10pc;
+	right: 0;
+	bottom:50pc ;
+	gap: 20px;
+	display: block;
+	padding: 10px;	
+	font-size: large;
+	background: rgba(0,0,0,0.4);
+	border-radius: 6px;
+	color: rgba(0,255,255,0.4);
+}
+
+.redi a{
+    text-decoration: none;
+    color: rgba(0,255,255,0.4);
+}
+
+#start-btn{
+	position:absolute;
+	top: 1000%;
+	left: -10%;
+	display: block;
+	background-color: rgba(0,0,0,0.4);
+	color: #c67b5c;
+	width: 200px;
+	font-size: x-large;
+	border-radius: 10%;
+	}
